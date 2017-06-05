@@ -1,0 +1,32 @@
+Add static tags to JS in template
+restruture home for feature 5 new posts
+add about page
+add blog page w/ archive
+
+5/14
+migrate new modelscheck admin and database
+find a place in template to put a post and write one
+
+WEEKEND GOALS:
+
+Get the 3 icons linking to a post page, preferably replacing the icon with a thumbnail
+get the featured post box and image up and going
+
+TO DO: Get detail page up and front pictures linked to bringup up posts
+Add short description to model and HTML
+
+Set Up post html page, why is nav covering something, get nav to resize like home,
+
+Add author element to model
+Figure out how to pass recent posts to DetailView url/template to display on sidewell, can hardcode for now to launch
+
+Align sidebar text center, figure out how to get sidebars to stay on side, add subscription feature
+
+Fix links to pages, Subscription feature
+
+
+DESIGN: About modal smaller, border to featured post, nav words slightly bigger, center recent posts list-style
+...better profile pic
+
+
+Figure out new error pertaining to not having module psycopg2 when trying to migrate for heroku
