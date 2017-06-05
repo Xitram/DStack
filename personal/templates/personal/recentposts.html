@@ -1,0 +1,20 @@
+{% load recents %}
+ {% recents as recents %}
+
+        <div class="col-lg-4">
+          <h4>Other Recent Posts</h4>
+          {% for post in recents %}
+            <ul class="list-unstyled">
+              <p><a href="/blog/{{post.id}}">{{ post.title }}</a></p>
+                </li>
+            </ul>
+            {% endfor %}
+        </div>
+        <div class="col-lg-4">
+            <h4>Don't Mind the Mess!</h4>
+            <p>Welcome to my work in progress. Like most desks, its currently pretty strewn about. More stuff coming soon!</p>
+        </div>
+
+    </div>
+    <!-- /.row -->
+</div>
