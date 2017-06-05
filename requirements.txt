@@ -1,1 +1,8 @@
-d j - d a t a b a s e - u r l = = 0 . 4 . 2   D j a n g o = = 1 . 1 1 . 1   d j a n g o - c k e d i t o r = = 5 . 2 . 2   g u n i c o r n = = 1 9 . 7 . 1   o l e f i l e = = 0 . 4 4   P i l l o w = = 4 . 1 . 1   p y t z = = 2 0 1 7 . 2   w h i t e n o i s e = = 3 . 3 . 0   
+dj-database-url==0.4.2
+Django==1.11.1
+django-ckeditor==5.2.2
+gunicorn==19.7.1
+olefile==0.44
+Pillow==4.1.1
+pytz==2017.2
+whitenoise==3.3.0
