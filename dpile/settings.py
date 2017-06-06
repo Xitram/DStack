@@ -132,8 +132,6 @@ STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
 
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
-CKEDITOR_JQUERY_URL = '/static/admin/js/vendor/jquery/jquery.min.js'
-
 CKEDITOR_UPLOAD_PATH = "media/"
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
