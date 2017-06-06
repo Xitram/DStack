@@ -20,7 +20,7 @@
                         {% for post in onlypost %}
                         <p><a href="/blog/{{post.id}}" style='color:white'>{{ post.title }}</a></p>
                         <div class="featured-post">
-                                <img src="media/{{post.thumbnail}}" class="img-responsive" alt="Cabin">
+                                <img src="media/{{post.thumbnail}}" class="img-responsive" alt="">
                         {% endfor %}
                             </a>
                         </div>
@@ -51,7 +51,7 @@
                         <div class="img-caption">
                         <h4> {{ post.title }} </h4>
                         </div>
-                        <img src="media/{{post.thumbnail}}" class="img-responsive" alt="Cabin">
+                        <img src="media/{{post.thumbnail}}" class="img-responsive" alt="">
                     </a>
                 </div>
               {% endfor %}
@@ -91,7 +91,6 @@
                         <div class="modal-body">
                             <h2>About Me</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/cabin.png" class="img-responsive img-centered" alt="">
                             {% for about in about %}
                             <p> {{ about.info|safe }} </p>
                             {% endfor %}
