@@ -2,11 +2,12 @@ from django.db import models
 from ckeditor.fields import RichTextField
 from ckeditor_uploader.fields import RichTextUploadingField
 from django.utils import timezone
+from redactor.fields import RedactorField
 
 class Post(models.Model):
     thumbnail = models.ImageField(upload_to='media/')
     title = models.CharField(max_length=120)
-    body = RichTextUploadingField(default='Default Post')
+    body = RedactorField(verbose_name=u'Text')
     date = models.DateTimeField('date published')
 
     def __str__(self):

@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'personal',
+    'redactor',
     'ckeditor',
     'ckeditor_uploader',
     'django.contrib.admin',
@@ -138,6 +139,9 @@ CKEDITOR_BASEPATH = os.path.join(STATIC_ROOT, "ckeditor/")
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+
+REDACTOR_OPTIONS = {'lang': 'en'}
+REDACTOR_UPLOAD = 'media/'
 
 
 import dj_database_url
