@@ -150,7 +150,7 @@ AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
 AWS_STORAGE_BUCKET_NAME = 'dstackbucket'
 
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
-ADMIN_MEDIA_PREFIX = STATIC_URL + 'admin/'
+MEDIA_URL = 'http://%s.s3.amazonaws.com/your-folder/' % AWS_STORAGE_BUCKET_NAME
 
 import dj_database_url
 DATABASES['default'] = dj_database_url.config()
