@@ -7,7 +7,7 @@ import cloudinary
 from cloudinary.models import CloudinaryField
 
 class Post(models.Model):
-    thumbnail = cloudinary.models.CloudinaryField('image')
+    thumbnail = models.CharField(max_length=300)
     title = models.CharField(max_length=120)
     body = RedactorField(verbose_name=u'Text')
     date = models.DateTimeField('date published')
@@ -16,7 +16,7 @@ class Post(models.Model):
         return self.title
 
 class About(models.Model):
-    info = RichTextUploadingField(default = 'Default About')
+    info = RedactorField(verbose_name=u'About')
 
     def __str__(self):
         return self.info
