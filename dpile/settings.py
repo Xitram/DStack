@@ -117,13 +117,17 @@ USE_L10N = True
 USE_TZ = True
 
 
-
+CKEDITOR_CONFIGS = {
+    'default': {
+        'toolbar': 'Standard',
+    },
+}
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 
-STATIC_URL = '/personal/static/personal'
+STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'personal/static')
 
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
