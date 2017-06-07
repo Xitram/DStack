@@ -137,8 +137,8 @@ CKEDITOR_UPLOAD_PATH = "media/"
 
 CKEDITOR_BASEPATH = os.path.join(STATIC_ROOT, "ckeditor/")
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+MEDIA_URL = 'media/'
 
 REDACTOR_OPTIONS = {'lang': 'en'}
 REDACTOR_UPLOAD = 'media/'
