@@ -142,6 +142,7 @@ MEDIA_URL = '/media/'
 
 REDACTOR_OPTIONS = {'lang': 'en'}
 REDACTOR_UPLOAD = 'media/'
+REDACTOR_UPLOAD_HANDLER = 'redactor.handlers.SimpleUploader'
 
 
 import dj_database_url
