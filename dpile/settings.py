@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'storages'
+    'storages',
+    'cloudinary',
 ]
 
 MIDDLEWARE = [
@@ -145,7 +146,11 @@ REDACTOR_OPTIONS = {'lang': 'en'}
 REDACTOR_UPLOAD = 'media/'
 REDACTOR_UPLOAD_HANDLER = 'redactor.handlers.SimpleUploader'
 
-
+CLOUDINARY = {
+  'cloud_name': '[hyl67wrbj]',
+  'api_key': '[196532875158677]',
+  'api_secret': '[mAEapzCoNVpweCz6ErRvOXm0B7g]',  
+}
 
 
 import dj_database_url

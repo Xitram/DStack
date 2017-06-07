@@ -3,9 +3,10 @@ from ckeditor.fields import RichTextField
 from ckeditor_uploader.fields import RichTextUploadingField
 from django.utils import timezone
 from redactor.fields import RedactorField
+from cloudinary.models import CloudinaryField
 
 class Post(models.Model):
-    thumbnail = models.ImageField(upload_to='media/')
+    thumbnail = CloudinaryField('image')
     title = models.CharField(max_length=120)
     body = RedactorField(verbose_name=u'Text')
     date = models.DateTimeField('date published')
